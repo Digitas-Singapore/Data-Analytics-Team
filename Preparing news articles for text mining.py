@@ -9,7 +9,7 @@ Original file is located at
 
 # -*- coding: utf-8 -*-
 """
-TA Workshop: Text Preparation (DTM)
+Chilin's hands-on practice: Text Preparation (DTM)
 """
 import nltk
 from nltk import FreqDist, SnowballStemmer
