@@ -24,6 +24,11 @@ nltk.download('wordnet')  #word database of English nouns, adjectives, adverts a
 nltk.download('averaged_perceptron_tagger')  #Part of speech tagger
 nltk.download('words') #loading corpora of English words
 
+# Fetch a single <10MB file using the raw GitHub URL.
+!curl --remote-name \
+-H 'Accept: application/vnd.github.v3.raw' \
+--location https://raw.githubusercontent.com/Digitas-Singapore/Chilin-s-Github-datasets/main/osha.txt
+
 # Open and read in data from osha.txt
 data_df  =  pandas.read_csv("osha.txt",delimiter="\t", header=None) #reads text data into data frame
 
